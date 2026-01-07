@@ -17,11 +17,8 @@ this.studentGrade = grade;
 }
 show() {
 return this.present() + from
-this.studentGrade;
 }   
 }
-let myStudent = new Grade("Tina", "grade 6");
-document.getElementById("details").innerHTML =
-myStudent.show();
-document.getElementById("greetings").innerHTML =
-Student.hello();    
+let myStudent = new Grade("Tina","grade 6");
+document.getElementById("details").innerHTML = myStudent.show();
+document.getElementById("greetings").innerHTML = Student.hello();
