@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fooddddie's Kitchen</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+nav h2 {
+    color: #ff6600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+    height: 300px;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.container {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    background: #d4edda;
+    padding: 20px;
+}
+
+aside button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+    background: #e3f2fd;
+}
+
+/* SECTION */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #ff6600;
+}
+
+/* BOOKING */
+.booking {
+    background: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.booking input {
+    padding: 10px;
+    width: 250px;
+    margin: 10px;
+}
+
+.booking button {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* SOCIAL MEDIA */
+.social {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.social h2 {
+    margin-bottom: 10px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 10px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Fooddddie's Kitchen</h2>
+    <ul>
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('about')">About</a></li>
+        <li><a onclick="showPage('menu')">Menu</a></li>
+        <li><a onclick="showPage('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- BANNER -->
+<div class="banner">
+    Welcome to Our Restaurant
+</div>
+
+<!-- MAIN AREA -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside>
+        <h3>Offers</h3>
+        <button onclick="showOffer()">Today's Offer</button>
+    </aside>
+
+    <!-- CONTENT -->
+    <main id="content">
+        <h3>Welcome</h3>
+        <p>Welcome to Fooddddie's Kitchen.</p>
+    </main>
+
+</div>
+
+<!-- SECTION -->
+<div class="section">
+    <h2>Why Our Restaurant is the Best</h2>
+    <p>
+        We provide high-quality food, friendly service, and a beautiful atmosphere
+        perfect for family dinners and celebrations.
+    </p>
+</div>
+
+<!-- BOOKING -->
+<div class="booking">
+    <h2>Make a Booking</h2>
+    <p>Enter your phone number</p>
+    <input type="text" id="phoneInput" placeholder="Enter your phone number">
+    <br>
+    <button onclick="bookNow()">Submit</button>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="portfolio">
+    <h2 style="text-align:center;">Our Dishes</h2>
+    <div class="grid">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+    </div>
+</div>
+
+<!-- SOCIAL MEDIA -->
+<div class="social">
+    <h2>Let's be Friends</h2>
+    <p>
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Email</a>
+    </p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Copyright © 2026 | All Rights Are Reserved By Fooddddie's Kitchen</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
