@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank App</title>
+    <link rel="stylesheet" href="style.css"> <!-- your CSS -->
+</head>
+<body>
+
+    <h1>Bank App</h1>
+
+    <!-- Optional fields -->
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+    <input type="text" id="purpose" placeholder="Purpose (optional)"><br><br>
+
+    <!-- Amount -->
+    <input type="number" id="amount" placeholder="Enter Transaction Amount"><br><br>
+
+    <!-- Buttons -->
+    <button onclick="creditAmount()">Credit</button>
+    <button onclick="debitAmount()">Debit</button>
+
+    <!-- Balance -->
+    <h2>Your Account Balance is: Rs.<span id="balance">0</span></h2>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
